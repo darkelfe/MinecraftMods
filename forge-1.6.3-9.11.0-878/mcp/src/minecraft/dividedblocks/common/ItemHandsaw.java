@@ -26,8 +26,8 @@ public class ItemHandsaw extends ItemTool
 			" S ",
 			"S S",
 			"MMM",
-			"S", Item.stick,
-			"M", material.getToolCraftingMaterial()
+			'S', Item.stick,
+			'M', Block.blocksList[material.getToolCraftingMaterial()]
 		});	
 	}
 }
