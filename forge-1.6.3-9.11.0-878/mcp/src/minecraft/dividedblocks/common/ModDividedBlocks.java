@@ -29,12 +29,18 @@ public class ModDividedBlocks
 	// Items
 	public static Item stoneHandsaw;
 	
+	// Blocks
+	public static Block verticalHalfCobblestone;
+	
 	@EventHandler
 	public void PreInit (FMLPreInitializationEvent event)
 	{
 		// Declarations
 			// Items
 		stoneHandsaw = new ItemHandsaw(12000, EnumToolMaterial.STONE).setUnlocalizedName("StoneHandsaw").setTextureName("dividedblocks:StoneHandsaw");
+		
+			// Blocks
+		verticalHalfCobblestone = new BlockDivision(2000, Block.cobblestone, 1, 2, 1);
 		
 		// Registry
 			// Items
